@@ -1,313 +1,220 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
-#wfhTrust{
+#wfhPink{
   font-family:'Poppins',sans-serif;
-  background:#f3f7fc;
-  color:#172b46;
-  padding:20px 12px;
+  background:linear-gradient(180deg,#fff5fa 0%,#ffe0ef 100%);
+  color:#111;
+  width:100%;
+  padding:28px 14px 35px;
   box-sizing:border-box;
-}
-#wfhTrust *{box-sizing:border-box}
-#wfhTrust .main{
-  max-width:440px;
-  margin:auto;
-  background:#fff;
-  border:1px solid #e0e9f5;
-  border-radius:20px;
-  overflow:hidden;
-  box-shadow:0 12px 35px #18375e12;
-}
-#wfhTrust .top{
-  background:linear-gradient(140deg,#10366f,#087dcc);
-  color:#fff;
   text-align:center;
-  padding:28px 20px;
 }
-#wfhTrust .verified{
-  display:inline-block;
-  background:#ffffff18;
-  border:1px solid #ffffff50;
-  border-radius:30px;
-  padding:7px 12px;
-  font-size:10px;
-  font-weight:700;
-  letter-spacing:.7px;
+#wfhPink *{box-sizing:border-box}
+#wfhPink .container{
+  max-width:600px;
+  margin:0 auto;
 }
-#wfhTrust .logo{
-  width:76px;
-  height:76px;
-  border-radius:22px;
-  margin:20px auto 14px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:40px;
-  background:#fff;
-  box-shadow:0 7px 18px #001c4433;
-}
-#wfhTrust h1{
+#wfhPink .join-btn{
+  display:block;
+  width:100%;
+  background:linear-gradient(110deg,#0878d9,#0872b5);
   color:#fff;
-  font-size:26px;
-  line-height:1.4;
-  margin:8px 0;
-  font-weight:800;
+  text-decoration:none;
+  border:1px solid #fff;
+  border-radius:60px;
+  padding:20px 10px;
+  font-size:clamp(12px,3.5vw,20px);
+  line-height:1.5;
+  font-weight:700;
+  box-shadow:0 8px 20px #0078d922;
+  transition:transform .2s ease;
 }
-#wfhTrust .top p{
-  font-size:12px;
-  line-height:1.9;
-  color:#e5f1ff;
-  margin:8px 0 0;
-}
-#wfhTrust .body{padding:20px}
-#wfhTrust .section{
-  font-size:16px;
-  font-weight:800;
-  margin:22px 0 12px;
-  color:#173b6d;
-}
-#wfhTrust .intro{
-  font-size:12px;
-  line-height:1.9;
-  color:#596b82;
-}
-#wfhTrust .trustbox{
-  border:1px solid #dce8f6;
-  background:#f8fbff;
-  border-radius:13px;
-  padding:14px;
-  margin-top:14px;
-}
-#wfhTrust .item{
-  display:flex;
-  align-items:flex-start;
-  gap:10px;
-  font-size:12px;
-  line-height:1.8;
-  padding:9px 0;
-  border-bottom:1px solid #e7edf5;
-}
-#wfhTrust .item:last-child{border-bottom:0}
-#wfhTrust .check{
-  flex-shrink:0;
-  color:#087b54;
-  background:#e2f7ed;
-  width:25px;
-  height:25px;
-  border-radius:8px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-weight:800;
-}
-#wfhTrust .step{
-  display:flex;
-  gap:12px;
-  margin:14px 0;
-  align-items:flex-start;
-}
-#wfhTrust .num{
-  width:30px;height:30px;
+#wfhPink .join-btn:active{transform:scale(.97)}
+#wfhPink .profile{
+  width:185px;
+  height:185px;
+  margin:32px auto 15px;
+  border:7px solid #fff;
   border-radius:50%;
-  flex-shrink:0;
+  overflow:hidden;
   display:flex;
   align-items:center;
   justify-content:center;
-  background:#e4f1ff;
-  color:#075db6;
-  font-size:13px;
-  font-weight:800;
+  background:#f8cde2;
+  box-shadow:0 7px 28px #bd609733;
 }
-#wfhTrust .step b{font-size:12px}
-#wfhTrust .step p{
-  font-size:11px;
-  line-height:1.8;
-  margin:4px 0;
-  color:#65748a;
-}
-#wfhTrust .apply{
+#wfhPink .profile img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
   display:block;
-  text-decoration:none;
-  text-align:center;
-  background:linear-gradient(135deg,#20b8f5,#0874dc);
-  color:white;
-  font-weight:800;
-  padding:16px 10px;
-  border-radius:12px;
-  font-size:14px;
-  box-shadow:0 5px 0 #0754a2;
-  margin-top:19px;
-  animation:trustPulse 2.5s infinite;
 }
-#wfhTrust .apply2{
-  display:block;
-  text-align:center;
-  text-decoration:none;
-  color:#0872cb;
-  background:#fff;
-  border:1px solid #b9d8f5;
-  padding:13px 10px;
-  border-radius:12px;
-  margin-top:15px;
-  font-size:12px;
+#wfhPink h1{
+  color:#16ae4d;
+  font-size:clamp(29px,7vw,40px);
+  font-weight:800;
+  line-height:1.3;
+  margin:10px 0 12px;
+}
+#wfhPink .job-label{
+  display:inline-block;
+  max-width:100%;
+  background:#f9c5e0;
+  color:#a51d65;
+  border-radius:40px;
+  padding:10px 17px;
+  font-size:clamp(13px,3.8vw,20px);
   font-weight:700;
+  margin-bottom:28px;
 }
-#wfhTrust .faq{
-  border-bottom:1px solid #e4ebf4;
-  padding:12px 0;
+#wfhPink .features{
+  max-width:520px;
+  margin:0 auto;
+  text-align:left;
 }
-#wfhTrust .faq b{
+#wfhPink .feature{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  margin:0 0 18px;
+  font-size:clamp(13px,3.5vw,19px);
+  line-height:1.65;
+  font-weight:500;
+}
+#wfhPink .tick{
+  flex:0 0 43px;
+  width:43px;
+  height:43px;
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#d9f5df;
+  color:#129a39;
+  font-size:26px;
+  font-weight:800;
+}
+#wfhPink .subheading{
+  color:#087bd9;
+  font-size:clamp(17px,4.5vw,25px);
+  font-weight:800;
+  line-height:1.5;
+  margin:32px 0 36px;
+}
+#wfhPink .disclaimer{
+  display:flex;
+  align-items:flex-start;
+  gap:14px;
+  text-align:left;
+  margin:48px auto 0;
+  padding:17px 15px;
+  border:2px solid #fac5df;
+  border-radius:20px;
+  color:#42244d;
   font-size:12px;
-  color:#203c60;
-}
-#wfhTrust .faq p{
-  font-size:11px;
-  line-height:1.8;
-  color:#627189;
-  margin:7px 0 0;
-}
-#wfhTrust .warning{
-  margin-top:18px;
-  padding:13px;
-  background:#fff8e9;
-  border:1px solid #f3dfae;
-  border-radius:12px;
-  color:#79561c;
-  font-size:10px;
   line-height:1.9;
 }
-#wfhTrust .footer{
-  background:#f7faff;
-  text-align:center;
-  padding:17px 12px;
-  color:#78879b;
-  font-size:10px;
-  line-height:1.9;
+#wfhPink .shield{
+  font-size:32px;
+  flex-shrink:0;
 }
-@keyframes trustPulse{
-  0%,100%{transform:scale(1)}
-  50%{transform:scale(1.02)}
+#wfhPink .disclaimer strong{color:#a71c65}
+#wfhPink .ad-banner{
+  margin:40px -4px 25px;
+  padding:16px 10px;
+  border-radius:22px;
+  color:#fff;
+  background:linear-gradient(105deg,#5435ed,#a822ec,#f12f91);
+  box-shadow:0 9px 22px #b62ce433;
+  font-size:clamp(11px,3.2vw,19px);
+  line-height:1.7;
 }
-@media(max-width:360px){
-  #wfhTrust h1{font-size:23px}
-  #wfhTrust .body{padding:15px}
+#wfhPink .ad-banner b{
+  color:#5ce5ff;
+  font-weight:800;
+}
+@media(max-width:380px){
+  #wfhPink{padding:22px 10px}
+  #wfhPink .profile{width:155px;height:155px}
+  #wfhPink .tick{flex-basis:36px;width:36px;height:36px;font-size:22px}
+  #wfhPink .feature{gap:10px}
+  #wfhPink .disclaimer{padding:12px 10px;gap:9px}
 }
 </style>
 
-<div id="wfhTrust">
-  <div class="main">
+<div id="wfhPink">
+  <div class="container">
 
-    <div class="top">
-      <div class="verified">WORK FROM HOME • JOB UPDATES</div>
-      <div class="logo">💼</div>
-      <h1>Work From Home Job</h1>
-      <p>
-        घर बैठे काम के अवसरों की जानकारी प्राप्त करें।<br>
-        जानकारी पढ़ें • शर्तें समझें • फिर आवेदन करें
-      </p>
+    <!-- TOP TELEGRAM BUTTON -->
+    <a class="join-btn"
+       href="https://t.me/YOUR_CHANNEL"
+       target="_blank"
+       rel="noopener noreferrer">
+      JOIN NOW FOR FREE TELEGRAM CHANNEL 🚀
+    </a>
+
+    <!-- PROFILE PHOTO: REPLACE IMAGE URL -->
+    <div class="profile">
+      <img
+        src="https://placehold.co/400x400/f5d7e9/9b2168?text=YOUR+DP"
+        alt="Work From Home Profile">
     </div>
 
-    <div class="body">
+    <!-- MAIN TITLE -->
+    <h1>Work From Home</h1>
 
-      <div class="intro">
-        हमारे Telegram चैनल पर उपलब्ध जॉब पोस्ट की जानकारी,
-        काम की आवश्यकताएँ और आवेदन प्रक्रिया पढ़ें।
-        आवेदन करने से पहले हर अवसर की शर्तों की जाँच करें।
+    <div class="job-label">
+      Handwriting / Copy Writing Job
+    </div>
+
+    <!-- KEY POINTS -->
+    <div class="features">
+
+      <div class="feature">
+        <span class="tick">✓</span>
+        <span>Handwriting &amp; Copy Writing Work</span>
       </div>
 
-      <div class="section">✅ हमारे चैनल पर क्या मिलेगा?</div>
-
-      <div class="trustbox">
-        <div class="item">
-          <span class="check">✓</span>
-          <div><b>Job Information</b><br>
-          उपलब्ध काम और भूमिका से जुड़ी जानकारी।</div>
-        </div>
-        <div class="item">
-          <span class="check">✓</span>
-          <div><b>Eligibility Details</b><br>
-          योग्यता, आवश्यक उपकरण और काम की शर्तें।</div>
-        </div>
-        <div class="item">
-          <span class="check">✓</span>
-          <div><b>Payment Information</b><br>
-          जहाँ उपलब्ध हो, वहाँ भुगतान की शर्तें और तरीका।</div>
-        </div>
-        <div class="item">
-          <span class="check">✓</span>
-          <div><b>Application Process</b><br>
-          आवेदन कैसे करना है और आगे क्या प्रक्रिया होगी।</div>
-        </div>
+      <div class="feature">
+        <span class="tick">✓</span>
+        <span>Payment Per Page / Per Task</span>
       </div>
 
-      <div class="section">📋 आवेदन कैसे करें?</div>
-
-      <div class="step">
-        <div class="num">1</div>
-        <div>
-          <b>Telegram चैनल खोलें</b>
-          <p>नीचे दिए गए बटन पर क्लिक करके चैनल पर जाएँ।</p>
-        </div>
-      </div>
-
-      <div class="step">
-        <div class="num">2</div>
-        <div>
-          <b>जॉब की जानकारी पढ़ें</b>
-          <p>काम, योग्यता, भुगतान और नियमों को ध्यान से समझें।</p>
-        </div>
-      </div>
-
-      <div class="step">
-        <div class="num">3</div>
-        <div>
-          <b>सही जानकारी के बाद आवेदन करें</b>
-          <p>कंपनी और अवसर की पुष्टि करके ही अपनी जानकारी साझा करें।</p>
-        </div>
-      </div>
-
-      <a class="apply"
-         href="https://t.me/YOUR_CHANNEL"
-         target="_blank" rel="noopener">
-         ✈ JOIN TELEGRAM CHANNEL
-      </a>
-
-      <a class="apply2"
-         href="https://t.me/YOUR_CHANNEL"
-         target="_blank" rel="noopener">
-         📲 VIEW JOB UPDATES
-      </a>
-
-      <div class="section">❓ अक्सर पूछे जाने वाले सवाल</div>
-
-      <div class="faq">
-        <b>क्या घर बैठे काम कर सकते हैं?</b>
-        <p>यह संबंधित जॉब की शर्तों और काम के प्रकार पर निर्भर करता है।</p>
-      </div>
-
-      <div class="faq">
-        <b>कितनी कमाई होगी?</b>
-        <p>कमाई काम, समय, योग्यता और तय भुगतान की शर्तों पर निर्भर करती है। किसी निश्चित कमाई की गारंटी नहीं है।</p>
-      </div>
-
-      <div class="faq">
-        <b>क्या नौकरी पक्की है?</b>
-        <p>नहीं। चयन संबंधित नियोक्ता और उसकी प्रक्रिया पर निर्भर करता है।</p>
-      </div>
-
-      <div class="warning">
-        <b>🔒 आपकी सुरक्षा जरूरी है</b><br>
-        किसी अनजान व्यक्ति को OTP, UPI PIN, बैंक पासवर्ड या कार्ड की जानकारी न दें।
-        नौकरी के नाम पर पैसे माँगे जाएँ तो पहले पूरी जाँच करें।
-        कंपनी की पहचान और नौकरी की शर्तों की पुष्टि करें।
+      <div class="feature">
+        <span class="tick">✓</span>
+        <span>Work Instructions &amp; Payment Terms</span>
       </div>
 
     </div>
 
-    <div class="footer">
-      WORK FROM HOME JOB UPDATES<br>
-      कृपया आवेदन से पहले सभी शर्तें जाँचें।<br>
-      © 2026 All Rights Reserved
+    <div class="subheading">
+      Join Today For Job Updates! 🚀
+    </div>
+
+    <!-- BOTTOM TELEGRAM BUTTON -->
+    <a class="join-btn"
+       href="https://t.me/YOUR_CHANNEL"
+       target="_blank"
+       rel="noopener noreferrer">
+      JOIN NOW FOR FREE TELEGRAM CHANNEL 🚀
+    </a>
+
+    <!-- HONEST DISCLAIMER -->
+    <div class="disclaimer">
+      <div class="shield">🛡️</div>
+      <div>
+        <strong>Disclaimer:</strong>
+        Job information only. Work availability and selection
+        are not guaranteed. Payment depends on the agreed
+        per-page or per-task rate and completed work.
+        Please verify all terms before starting.
+      </div>
+    </div>
+
+    <!-- AGENCY BANNER -->
+    <div class="ad-banner">
+      🔥 Ads by <b>ADBUILDAGENCY</b> • Boost Your Reach 🚀
     </div>
 
   </div>
